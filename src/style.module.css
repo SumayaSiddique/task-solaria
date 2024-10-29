@@ -1,0 +1,139 @@
+.filterContainer {
+    position: fixed;
+    top: 10px; 
+    left: 10px;
+    z-index: 10;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: .5rem;
+    background-color: rgba(121, 121, 121, 0.8);
+    border-radius: .2rem;
+    min-width: 12rem;
+}
+
+.filterItem {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 0 .6rem;
+    font-family: sans-serif;
+}
+
+.filterButtons {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.filterButton {
+    width: 8rem;
+    color: white;
+    border: none;
+    background-color: rgb(97, 147, 241);
+    border-radius: .2rem;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.filterButton:hover {
+    background-color: rgb(72, 128, 233);
+}
+.filterButton.available {
+    background-color: green;
+}
+
+.filterButton.reserved {
+    background-color: orange;
+}
+
+.filterButton.sold {
+    background-color: red;
+}
+
+.filterButton.all {
+    background-color: rgb(97, 147, 241);
+}
+
+.filterButton:hover {
+    filter: brightness(0.9);
+}
+
+.sliderControls {
+    position: relative;
+    min-height: 1rem;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    appearance: none;
+    appearance: none;
+    appearance: none;
+    appearance: none;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #C6C6C6;
+    pointer-events: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    pointer-events: all;
+    width: .8rem;
+    height: .8rem;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #C6C6C6;
+    cursor: pointer;
+    position: relative;
+    z-index: 888;
+}
+
+input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    pointer-events: all;
+    width: .8rem;
+    height: .8rem;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #C6C6C6;
+    cursor: pointer;
+    z-index: 888; 
+}
+
+.sliderTrack {
+    position: absolute;
+    height: 2px;
+    top: .13rem;
+    background-color: #387bbe;
+    z-index: 1;
+}
+
+.priceRangeDisplay {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+
+.polygon_item_hover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.polygon_data_status_hover {
+    background-color: green;
+    padding: .1rem .4rem;
+    border-radius: .2rem;
+}
+
+.polygon_data_price_hover {
+    margin-left: .5rem;
+}
